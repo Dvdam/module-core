@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Dvdam_Core::dvdam" title="Dvdam" module="Dvdam_Core" sortOrder="50" resource="Dvdam_Core::dvdam"/>
+        <add id="Dvdam_Core::documentation"
+             title="Documentations"
+             module="Dvdam_Core"
+             sortOrder="10"
+             resource="Dvdam_Core::documentation"
+             parent="Dvdam_Core::dvdam"/>
+        <add id="Dvdam_Core::devguide"
+             title="Developer Magento Guides"
+             module="Dvdam_Core"
+             sortOrder="15"
+             action="dvdam/index/devguide"
+             target="_blank"
+             resource="Dvdam_Core::devguide"
+             parent="Dvdam_Core::documentation"/>
+    </menu>
+</config>

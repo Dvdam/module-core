@@ -1,0 +1,34 @@
+{
+  "name": "dvdam/module-core",
+  "version": "1.0.0",
+  "description": "Dvdam Core for Magento 2",
+  "type": "magento2-module",
+  "require": {
+    "php": ">=8",
+    "magento/framework": "*",
+    "magento/module-backend": "102.0.*",
+    "magento/module-captcha": "100.4.*",
+    "magento/module-cms": "104.0.*",
+    "magento/module-config": "101.2.*",
+    "magento/module-cookie": "100.4.*",
+    "magento/module-csp": "100.4.*",
+    "magento/module-directory": "100.4.*"
+  },
+  "license": "proprietary",
+  "authors": [
+      {
+        "name": "Dvdam",
+        "role": "Developer"
+      }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Dvdam\\Core\\": ""
+    }
+  },
+  "minimum-stability": "alpha",
+  "prefer-stable": true
+}
